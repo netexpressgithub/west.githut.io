@@ -1,0 +1,166 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: "Poppins", sans-serif;
+background-color: aliceblue;
+}
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: red;
+padding: 10px 20px;
+
+
+position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1;
+
+
+
+}
+.logo {
+color: #ffffff;
+font-size: 24px;
+}
+.nav-list {
+list-style: none;
+display: flex;
+padding: 15px;
+}
+.nav-list li {
+position: relative;
+margin: 0 15px 0 0;
+}
+.nav-list a {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.3s;
+}
+.nav-list a:hover {
+color: #4570ff;
+}
+/*Mobile Styles */
+.menu-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+.bar {
+height: 3px;
+width: 25px;
+background-color: #ffffff;
+margin: 3px 0;
+}
+
+
+
+.breaking-news-bar{
+background-color: rgb(56, 186, 20);
+color: black;
+text-align: center;
+padding: 7px 0;
+width: 100%;
+height: 45px;
+margin-top: 63px;
+}
+.breaking-news-content{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.breaking-news-text{
+font-weight: bold;
+color: whitesmoke;
+}
+marquee{
+margin: 0 auto;
+white-space: nowrap;
+}
+
+.avd{
+  background-color: black;
+  text-align: center;
+  height: 80px;
+  }
+  .avd-1 img{
+  width: 30%;
+  height: 65px;
+  margin-top: 6px;
+  
+  
+  }
+
+/* =======form================ */
+ .form{
+  display: flex;
+  flex-wrap: wrap;
+ 
+ }
+
+.form-1{
+width: 450px;
+margin: 10px;
+}
+.form-1 img{
+width: 100%;
+height: 310px;
+}
+.form-2{
+width: 510px;
+background: white;
+box-shadow: 0 2px 6px rgba(0, 0, 0,0.1 );
+line-height: 32px;
+margin: 10px;
+border-radius: 10px;
+padding: 5px;
+}
+.form-4{
+width: 300px;
+margin-top: 8px;
+}
+.form-4 img{
+width: 100%;
+height: 390px;
+}
+/* ---------adv------------- */
+ .pass{
+ background-color: black;
+ height: 100px;
+ }
+ .pass-1{
+ text-align: center;
+ 
+ }
+ .pass-1 img{
+ height: 50px;
+ margin-top: 10px;
+ }
+/* Media Queries */
+@media (max-width: 768px) {
+.nav-list {
+display: none;
+flex-direction: column;
+width: 100%;
+position: absolute;
+top: 47px;
+left: 0;
+background-color: #000000;
+}
+.nav-list li {
+padding: 15px;
+text-align: center;
+}
+.nav-list.active {
+display: flex;
+}
+.menu-toggle {
+display: flex;
+}
+}
